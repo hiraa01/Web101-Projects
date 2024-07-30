@@ -1,0 +1,90 @@
+p {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: width 2s ease;
+    animation: gradientAnimation 4s infinite;
+    background: linear-gradient(90deg, rgb(119, 179, 104), rgb(165, 77, 48));
+    background-size: 200% 200%;
+}
+p:hover {
+    background: linear-gradient(90deg, rgb(119, 179, 104), rgb(165, 77, 48));
+}
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+  
+.p {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(188, 230, 173);
+    animation: inherit 4s infinite;
+}
+  
+body {
+    background-color: antiquewhite;
+} 
+h1 {
+    color: #558e23;
+    text-align: center;
+}
+h2 {
+    color:rgb(165, 101, 48)
+}
+h3{
+    color: darkred;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 10vhs;
+    margin: 0;
+    color: darkgreen;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    border: darkolivegreen;
+    border-radius: 20%; /* Butonu yuvarlak yapar */
+}
+button:hover {
+    background-color:  rgb(188, 230, 173);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.flex-item {
+    background-color: rgb(251, 213, 213);
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Fotoğrafın kutunun içinde düzgün görünmesini sağlar */
+}
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
