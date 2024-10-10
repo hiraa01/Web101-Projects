@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Hiranur SAZAK - Kişisel Web Sitesi</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hiranur SAZAK - Kişisel Web Sitesi">
+    <meta name="keywords" content="hiranursazak, Hiranur Sazak, Hiranur, Sazak, hiranursazak.com">
+    <meta name="author" content="Hiranur SAZAK">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"> 
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Hiranur SAZAK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#kimdir">Kimdir?</a></li>
+                    <li><a href="#neyapar">Ne yapar?</a></li>
+                    <li><a href="#hobi">Hobileri nelerdir?</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Container -->
+    <div id="kimdir" class="container-fluid bg-1">
+        <h3 class="margin">Merhaba, Ben Hiranur!</h3>
+        <div class="profile-img-container">
+            <img src="profil.jpg" class="profile-img" alt="hiranursazak">
+        </div>
+        <h3>Yazılım Geliştirici</h3>
+        <p>Necmettin Erbakan Üniversitesi Bilgisayar Mühendisliği 3.sınıf öğrencisiyim. Uşak'lıyım, üniversiteye geçene kadar bu şehirde eğitim gördüm.</p>
+        <p>Yazılım dillerinden Python, C#, C++ ve başlangıç seviye Golang ve JavaScript dillerine hakimim.</p>
+        <p>Yapay zekayla ilgileniyorum, Python OpenCV görüntü işleme sertifikasına sahibim.</p>
+        <p>İngilizcem B2 seviyesinde, geliştirmeye devam ediyorum.</p>
+        
+    </div>
+
+    <!-- Second Container -->
+    <div id="neyapar" class="container-fluid bg-2 text-center">
+        <h3 class="margin">Neler Yaparım?</h3>
+        <p>Hayatımın büyük bir kısmı arkadaşlarım, ailem ve okulumdan ibaret. Bunlar dışında ya kitap okurum ya da dizi, film izlerim.</p>
+        <p>Sessiz, sakin ortamları ve yalnız kalıp uzun uzun düşünerek kendimle vakit geçirmeyi çok severim.</p>
+        <p>Okul dışında farklı kaynaklardan, kurslardan yardım alarak kendimi geliştirmeye devam etmekteyim.</p>
+        <p>Yaptığım ilk stajım sırasında Django Python framework'ü ile bir Sınav Bilgi Sistemi web sitesi geliştirdim.</p>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div id="hobi" class="container-fluid bg-3 text-center">
+        <h3 class="margin">Hobilerim</h3>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>Hobilerimi görmek istersen buraya tıkla!</p>
+                <button class= "button" id="button1">Tıkla</button>
+                <script> 
+                document.getElementById('button1').addEventListener('click', function() {
+                window.location.href = 'hobiler.html';
+                });
+                </script>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="iletisim" class="container-fluid bg-5 text-center">
+        <h3 class="margin">İletişim</h3>
+        <br>
+        <div class="row ">
+            <div class="col-sm-5 text-left">
+                <p>İletişime geçmek için...</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Uşak, TR</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +90 546 156 3229</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> hirasazak123@gmail.com</p>
+            </div>
+            <div class="col-sm-7 ">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="İsim" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Mail" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Mesaj" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+       
+    </footer>
+
+</body>
+
+</html>
